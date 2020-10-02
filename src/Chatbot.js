@@ -12,6 +12,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import Bar from "./components/bar";
 
 const drawerWidth = 240;
 
@@ -44,13 +45,7 @@ const Chatbot = () => {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
-          <Typography variant="h6" noWrap>
-            Chatbot
-          </Typography>
-        </Toolbar>
-      </AppBar>
+      <Bar />
       <Drawer
         className={classes.drawer}
         variant="permanent"
@@ -107,6 +102,6 @@ const Chatbot = () => {
       </main>
     </div>
   );
-}
+};
 
 export default Chatbot;
